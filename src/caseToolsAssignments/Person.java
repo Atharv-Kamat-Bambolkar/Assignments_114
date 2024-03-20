@@ -5,8 +5,9 @@ public class Person {
 	private String name;
 	private int age;
 	
-	public Person() {
-		// TODO Auto-generated constructor stub
+	public Person(String n, int a) {
+		name = n;
+		age = a;
 	}
 
 	public String getName() {

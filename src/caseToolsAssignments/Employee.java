@@ -5,6 +5,12 @@ public class Employee {
 	private String name, job_title;
 	private int salary;
 	
+	public Employee(String n, String j, int s) {
+		name = n;
+		job_title = j;
+		salary = s;
+	}
+	
 	public String getName() {
 		return name;
 	}

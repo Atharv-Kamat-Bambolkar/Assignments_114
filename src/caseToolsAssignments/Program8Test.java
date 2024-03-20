@@ -8,8 +8,8 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-public class Program1Test {
-	
+public class Program8Test {
+
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
 	}
@@ -27,15 +27,13 @@ public class Program1Test {
 	}
 
 	@Test
-	public void testPositiveAdd() {
-		int result = Program1.add(5, 5);
-		assertEquals(10, result);
-	}
-	
-	@Test
-	public void testNegativeAdd() {
-		int result = Program1.add(-5, -5);
-		assertEquals(-10, result);
-	}
-	
+	public void testDaCalculation() {
+        // Create an instance of the Employee class
+		Employee employee = new Employee("John", "Manager", 50000);
+
+        // Test the calculation of DA
+		assertEquals(5000, employee.raiseSalary(10));
+}
+
+
 }

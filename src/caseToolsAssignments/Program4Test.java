@@ -8,8 +8,8 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-public class Program1Test {
-	
+public class Program4Test {
+
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
 	}
@@ -27,15 +27,21 @@ public class Program1Test {
 	}
 
 	@Test
-	public void testPositiveAdd() {
-		int result = Program1.add(5, 5);
-		assertEquals(10, result);
+	public void testCountDigitsForZero() {
+		int result = Program4.countDigit(0);
+		assertEquals(0, result);
+	}
+
+	@Test
+	public void testCountDigitsForPositiveNumber() {
+		int result = Program4.countDigit(12345);
+		assertEquals(5, result);
 	}
 	
 	@Test
-	public void testNegativeAdd() {
-		int result = Program1.add(-5, -5);
-		assertEquals(-10, result);
+	public void testCountDigitsForNegativeNumber() {
+		int result = Program4.countDigit(-987);
+		assertEquals(3, result);
 	}
 	
 }
